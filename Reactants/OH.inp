@@ -1,0 +1,10 @@
+! B3LYP def2-TZVP Opt Freq TightSCF
+
+%scf
+	MaxIter 300
+end
+
+* xyz 0 2
+O 0.0000 0.0000 0.0000
+H 0.0000 0.0000 0.9700
+*

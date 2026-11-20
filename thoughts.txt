@@ -1,0 +1,38 @@
+My desired workflow:
+1: Optimize isolated reactants, OH and CH4.
+2: Optimize isolated products, H2O and CH3.
+3: Find the transition state.
+	Optimize the six atom system
+4: Verify transition state
+	Frequency calculation should have exactly one imaginary frequency, which will be hydrogen abstraction
+5: Calculate higher-level energies
+	DLPNO-CCSD(T) single point calculations and combine the energies with DFT zero point energy corrections.
+6: Calculate reaction kinetics
+	Using MESS to calculate temperature dependent rate constants, including tunneling.
+7: Compare my work with literature.
+	See resulting k(T) and compare with published papers.
+
+First determining multiplicity for reactants and products.
+
+M = 2S + 1
+
+where S is n/2 and n is number of unpaired electron.
+
+OH: S = 1/2, M = 2
+
+CH4: S = 0, M = 1
+
+H20: S = 0, M = 1
+
+CH3: S = 1/2, M = 2
+
+also S_total = 1/2
+
+
+COMPUTATIONAL METHOD:
+
+First use DFT: B3LYP/ def2-TZVP
+
+Later use DLPNO-CCSD(T) for more accurate energies
+
+

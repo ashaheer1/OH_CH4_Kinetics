@@ -5,11 +5,13 @@ My desired workflow:
 	Optimize the six atom system
 4: Verify transition state
 	Frequency calculation should have exactly one imaginary frequency, which will be hydrogen abstraction
-5: Calculate higher-level energies
+5:IRC Calculation
+	Have to determine that transition state connect right reactants to right products
+6: Calculate higher-level energies
 	DLPNO-CCSD(T) single point calculations and combine the energies with DFT zero point energy corrections.
-6: Calculate reaction kinetics
+7: Calculate reaction kinetics
 	Using MESS to calculate temperature dependent rate constants, including tunneling.
-7: Compare my work with literature.
+8: Compare my work with literature.
 	See resulting k(T) and compare with published papers.
 
 First determining multiplicity for reactants and products.

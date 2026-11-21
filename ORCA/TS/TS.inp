@@ -1,0 +1,20 @@
+! B3LYP def2-TZVP TightSCF OptTS Freq
+
+%pal
+	nprocs 4
+end
+
+%geom
+	Calc_Hess true
+	Recalc_Hess 5
+end
+
+* xyz 0 2
+O -1.3000 0 -0.003476
+H -1.3000 0 0.973476
+C 1.4 
+H
+H 0.000 0.000 0.000
+H
+H
+*

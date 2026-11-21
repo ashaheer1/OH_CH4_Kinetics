@@ -37,4 +37,10 @@ First use DFT: B3LYP/ def2-TZVP
 
 Later use DLPNO-CCSD(T) for more accurate energies
 
+FOR THE TRANSITION STATE:
+
+I want the transition state H at the origin. So optimized OH will be on the left and optimized CH3 (basically) on the right.
+
+Now the C-H (TS) will be 1.4 A long and O-H (TS) will be 1.3 A long. Also the O-H-C will be linear
+
 

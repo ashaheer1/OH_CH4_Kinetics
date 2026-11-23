@@ -52,3 +52,7 @@ For O-H bond, I want it 180 degrees from C-H bond. so I calculated the vector of
 Since I want it 180 degrees, the O-H vector will be (-0.57735, -0.57735, 0.57735). Multiplied it by 1.2 for the bond length to get (-0.69282, -0.69282, 0.69282). For the H in the OH. it is 0.977 away in z-direction so it's coordinates are (-0.69282, -0.69282, 1.66982).
 
 I had to rerun transition state calculations with more defined criteria because initial TS calculations gave two imaginary frequencies. One of them was computational noise but will probably create problems during MESS calculations so was done again.
+
+Now I did the IRC run in the IRC directory. I got forward and backward and total trajectories. I used avogadro to confirm that the backwards leads to reactants and forward leads to products. I used the IRC_IRC_Full_trj to see the total movement from reactants to products. 
+
+Now I want to do two things. First take the output of the IRC and optimize the reactants and products and then calculate their frequencies as well. This will confirm that optimized structures are at a minima.

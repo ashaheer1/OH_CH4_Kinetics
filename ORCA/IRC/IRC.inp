@@ -1,0 +1,15 @@
+! B3LYP def2-TZVP TightSCF DefGrid3 IRC
+
+%pal
+	nprocs 4
+end
+
+%irc
+	Direction both
+	MaxIter 50
+	InitHess read
+	Hess_Filename "TS.hess"
+	hessMode 0
+end
+
+* xyzfile 0 2 TS.xyz

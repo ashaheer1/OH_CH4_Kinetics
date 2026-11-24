@@ -56,3 +56,5 @@ I had to rerun transition state calculations with more defined criteria because 
 Now I did the IRC run in the IRC directory. I got forward and backward and total trajectories. I used avogadro to confirm that the backwards leads to reactants and forward leads to products. I used the IRC_IRC_Full_trj to see the total movement from reactants to products. 
 
 Now I want to do two things. First take the output of the IRC and optimize the reactants and products and then calculate their frequencies as well. This will confirm that optimized structures are at a minima.
+
+Let's say I want to do reactants. I will look at the Backwards IRC .xyz file and separate the two reactants coordinates into new .inp file. Then do the same thing with the products and run 4 ORCA simulations for optimization.

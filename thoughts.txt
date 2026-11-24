@@ -58,3 +58,31 @@ Now I did the IRC run in the IRC directory. I got forward and backward and total
 Now I want to do two things. First take the output of the IRC and optimize the reactants and products and then calculate their frequencies as well. This will confirm that optimized structures are at a minima.
 
 Let's say I want to do reactants. I will look at the Backwards IRC .xyz file and separate the two reactants coordinates into new .inp file. Then do the same thing with the products and run 4 ORCA simulations for optimization.
+
+Next I will compare the two results, from IRC Endpoint Optimization to original optimization. First I did the FINAL SINGLE POINT ENERGY for both original optimization and the IRC Endpoint. Both groups have same final energy. Moving on to geometry, i putt every reactant and product in avogadro and matched the bond length, angle and dihedral. they all matched. will do RMSD later on. For frequency, looking at vibrational frequency from their .hess file and comparing them. I also looked at their normal modes.
+
+-----------------------------------------------------------------------------------------
+Notes for my conclusion to this comparison:
+The forward and backward IRC endpoint geometries were independently optimized using B3LYP/def2-TZVP with TightSCF convergence criteria. The resulting structures were compared against the previously optimized reactants and products.
+
+All four species (OH, CH₄, H₂O, and CH₃) showed excellent agreement in electronic energies, molecular geometries, and vibrational frequencies. Electronic energy differences were below 0.008 kcal/mol, geometric parameters agreed within 0.001, and vibrational frequency differences were below 1.2 cm⁻¹.
+
+All optimized structures exhibited exclusively positive vibrational frequencies, confirming that they correspond to local minima on the potential energy surface.
+
+These results support the successful connection of the intended reactant and product minima through the calculated transition state.
+-----------------------------------------------------------------------------------------
+
+SEPARATE TO DO LIST:
+
+Calculate RMSD for two geometry between original and IRC Endpoint for the four reactants and products.
+Make a Table for every molecule. headings to be: molecule/delta E (Eh)/Geometry RMSD/Frequency Agreement/Result
+
+
+IMPORTANT CODES:
+shahe@DESKTOP-UU630AD:~/myfolder/OH_CH4_Kinetics/ORCA$ for f in Reactants/Original_Optimization/*.out \
+         Reactants/IRC_End_Optimization/*.out \
+         Products/Original_Optimization/*.out \
+         Products/IRC_End_Optimization/*.out; do
+    echo "===== $f ====="
+    grep "FINAL SINGLE POINT ENERGY" "$f" | tail -1
+done

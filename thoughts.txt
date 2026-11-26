@@ -72,10 +72,26 @@ All optimized structures exhibited exclusively positive vibrational frequencies,
 These results support the successful connection of the intended reactant and product minima through the calculated transition state.
 -----------------------------------------------------------------------------------------
 
+DLPNO-CCSD(T):
+Now I am starting the DLPNO-CCSD(T), Domain-based Local Pair Natural Orbital Coupled Cluster Singles and Doubles (Pertubrative Triples). Basically this will give me a more accurate electronic energies which I can use to calculate activation energy (Ea) = E_TS - (E_reactants) or reaction energy (Erxn) = E_products - E_reactants at the electronic energy level. 
+
+I will start with optimized atoms from the IRC calculations to calculate DLPNO as it is usually done in different manuscripts because it saved computational cost and we can use higher level of theory for energy calculations. Basis set i am choosing is "cc-pVTZ" because it is middle of the pack and gives accurate calculations without being computationally expensive. 
+
+I also have to choose PNO which is the approximation of the general CCSD(T). I am choosing "TightPNO" which is the more accurate and computationally costly. Keeping it high because I want to see accurate energies for my MESS reaction rate calculations.
+
+IMPORTANT INFORMATION ON DLPNO-CCSD(T): I started with OH as it is relative simple. I had nprocs 4 initially but the calculations were getting stuck. So i tested without it and then with nprocs 2. Both of the results converged. Moving forward I will change every other one to nprocs 2 as well but i will keep the result to show that nprocs 4 didn't work. 
+
+
+
+
+
+
 SEPARATE TO DO LIST:
 
 Calculate RMSD for two geometry between original and IRC Endpoint for the four reactants and products.
 Make a Table for every molecule. headings to be: molecule/delta E (Eh)/Geometry RMSD/Frequency Agreement/Result
+
+Make a Table for DLPNO-CCSD(T) calculations. Headings to be: Species/DLPNO-CCSD(T) energy (Hartree)
 
 
 IMPORTANT CODES:

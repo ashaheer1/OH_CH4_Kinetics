@@ -1,0 +1,9 @@
+! UHF DLPNO-CCSD(T1) TightPNO cc-pVTZ cc-pVTZ/C TightSCF
+
+%maxcore 3000
+
+%scf
+    MaxIter 300
+end
+
+* xyzfile 0 2 OH.xyz

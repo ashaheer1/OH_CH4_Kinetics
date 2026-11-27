@@ -91,7 +91,7 @@ SEPARATE TO DO LIST:
 Calculate RMSD for two geometry between original and IRC Endpoint for the four reactants and products.
 Make a Table for every molecule. headings to be: molecule/delta E (Eh)/Geometry RMSD/Frequency Agreement/Result
 
-Make a Table for DLPNO-CCSD(T) calculations. Headings to be: Species/DLPNO-CCSD(T) energy (Hartree)
+Make a Table for DLPNO-CCSD(T) calculations. Headings to be: Species/DLPNO-CCSD(T) energy (Hartree)/SCF CONVERGED/DLPNO COMPLETED
 
 
 IMPORTANT CODES:

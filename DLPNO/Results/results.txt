@@ -1,0 +1,30 @@
+This is a perliminary Results file of DLPNO-CCSD(T1)
+
+Energies are in Eh
+
+FINAL SINGLE POINT ENERGY for OH: -75.6378
+FINAL SINGLE POINT ENERGY for CH4: -40.4382
+FINAL SINGLE POINT ENERGY for CH3: -39.7610
+FINAL SINGLE POINT ENERGY for H2O: -76.3323
+FINAL SINGLE POINT ENERGY for TS: -116.0636
+
+Thus,
+Reactant Energy: -116.076
+Product Energy: -116.0933
+
+Reaction Energy: E_prod - E_react = -0.0173 (which is also Ea-Er)
+
+Forward Activation Energy: E_TS - E_react = 0.0124
+Reverse Activation Energy: E_TS - E_prod = 0.0297
+
+It can also be tested using this code when in DLPNO directory:
+for f in \
+Reactants/OH_2test/OH.out \
+Reactants/CH4/CH4.out \
+Products/CH3/CH3.out \
+Products/H2O/H2O.out \
+TS/TS.out
+do
+    echo "===== $f ====="
+    grep -iE "FINAL SINGLE POINT ENERGY|ORCA TERMINATED NORMALLY" "$f"
+done

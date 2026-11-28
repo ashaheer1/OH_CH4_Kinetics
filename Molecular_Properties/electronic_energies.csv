@@ -1,0 +1,3 @@
+Species,Calculation,Method,Basis,Energy_Eh,Geometry_Source,Output_File
+OH,Optimization,B3LYP,def2-TZVP,-75.7349,IRC_End_Optimization,ORCA/Reactants/IRC_End_Optimization/OH.out
+OH,Single_Point,DLPNO_CCSD(T1), cc-pVTZ,-75.6378,IRC_End_Optimization,DLPNO/Reactants/OH_2test/OH.out
